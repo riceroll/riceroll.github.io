@@ -1,0 +1,159 @@
+/* Base Styles */
+html {
+    background-color: #ffffff;
+    font-size: 14px;
+  }
+  
+  body {
+    font-family: 'Lato', 'Roboto', sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  
+  /* Link */
+  a:link, a:visited, a:hover, a:active {
+    color: #80bfb4;
+  }
+
+  .plain-link {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+
+  .author-me {
+    font-weight: bold;
+  }
+
+  .author-link{
+    color: #929190 !important;
+  }
+
+  .author-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* info */
+  .info-name {
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+  }
+  
+  .info-meta {
+    font-size: 1.0rem;
+    line-height: 0.5rem;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .info{
+    padding-bottom: 20px;
+  }
+
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+
+  }
+
+  
+  /* Content Layout */
+  .container-fluid {
+    max-width: 800px;  
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    text-align: left;
+
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    padding-bottom: 20px;
+  }
+  
+  /* Paper Summaries */
+  .summary-card {
+    padding-bottom: 20px;
+  }
+
+  .summary-title {
+    font-family: 'Lato', 'Roboto', sans-serif;
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  
+  .summary-authors {
+    color: #929190;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .summary-venue {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #f2b336;
+  }
+  
+  
+  /* Paper Page Specific */
+  .page-title {
+    font-family: inherit;
+    font-size: 2rem;
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
+    /* text-align: center; */
+  }
+  
+  .page-authors {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .page-meta {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.0em;
+    text-align: center;
+    font-weight: 500;
+    color: #a2a1a0;
+  }
+  
+  /* Figure Images */
+  .page-teaser-image {
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+  }
+  
+  .page-figure {
+    max-height: 300px;
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .page-figure-caption {
+    text-align: center;
+  }
+  
+  /* Abstract */
+  .abstract {
+    text-align: left;
+    padding: 10px;
+  }
