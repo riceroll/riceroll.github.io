@@ -10,6 +10,56 @@ html {
     line-height: 1.7rem;
   }
   
+
+
+  .expandable-term {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.definition {
+  cursor: auto;
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #260124;
+    padding: 12px;
+    margin-top: 8px;
+    width: 400px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
+    font-size: 0.8em;
+}
+
+.definition.active {
+    display: block;
+}
+
+.section {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 2rem;
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.section-content {
+    color: #4b5563;
+    font-size: 0.95em;
+}
+
+
   /* Link */
   a:link, a:visited, a:hover, a:active {
     color: #80bfb4;
@@ -49,7 +99,7 @@ html {
   }
 
   .info{
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .info-text {
