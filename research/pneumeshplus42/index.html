@@ -1,0 +1,403 @@
+<!-- _includes/paper-page.njk -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<script src="/js/tracking.js"></script>
+
+<!-- main content -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col page-title">
+      PneuMesh: Pneumatic-driven Truss-based Shape Changing System
+    </div>
+  </div>
+  
+  
+   <div class="row"> <div class="col-4 page-figure"> <img src="/public/pneumeshplus/table_walk_side.gif" class="img-fluid page-teaser-image"> </div>
+<div class="col-4 page-figure"> <img src="/public/pneumeshplus/helmet0.gif" class="img-fluid page-teaser-image"> </div>
+<div class="col-4 page-figure"> <img src="/public/pneumeshplus/tentacle0.gif" class="img-fluid page-teaser-image"> </div>
+<p> Truss robots with complex morphologies and volumetric transformations designed by our specialized multi-objective genetic algorithm. </p>
+</div> 
+  
+  
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center flex-wrap page-authors">
+        
+        <div class="pl-1 pr-1">
+          
+            Jianzhe Gu
+          
+
+          
+            ,
+          
+        </div>
+        
+        <div class="pl-1 pr-1">
+          
+            <a href="https://woooodyye.github.io/" class="author-link">Ziwen Ye</a>
+          
+
+          
+            ,
+          
+        </div>
+        
+        <div class="pl-1 pr-1">
+          
+            <a href="https://tuckerrae-grant.com/" class="author-link">Tucker Rae-Grant</a>
+          
+
+          
+            ,
+          
+        </div>
+        
+        <div class="pl-1 pr-1">
+          
+            Shuhong Wang
+          
+
+          
+            ,
+          
+        </div>
+        
+        <div class="pl-1 pr-1">
+          
+            <a href="https://josiahhester.com/cv/" class="author-link">Josiah Hester</a>
+          
+
+          
+            ,
+          
+        </div>
+        
+        <div class="pl-1 pr-1">
+          
+            <a href="https://robotics.northwestern.edu/people/profiles/faculty/kriegman-sam.html" class="author-link">Sam Kriegman</a>
+          
+
+          
+            ,
+          
+        </div>
+        
+        <div class="pl-1 pr-1">
+          
+            <a href="https://engineering.cmu.edu/borg/directory/index.html" class="author-link">Vickie Webster-Wood</a>
+          
+
+          
+            ,
+          
+        </div>
+        
+        <div class="pl-1 pr-1">
+          
+            <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a>
+          
+
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col page-meta justify-content-center">
+    
+      Carnegie Mellon University
+
+      
+        &nbsp; | &nbsp;
+      
+    
+      University of California, Berkeley
+
+      
+        &nbsp; | &nbsp;
+      
+    
+      Georgia Institute of Technology
+
+      
+        &nbsp; | &nbsp;
+      
+    
+      Northwestern University
+
+      
+    
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col page-meta justify-content-center">
+      Nature Communications
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col d-flex justify-content-center flex-wrap">
+        
+          <a href="https://drive.google.com/file/d/13jnoUhNCMbOlyDhDHdcQHA53zjiA7ziE/view?usp=sharing" class="ml-2 mr-2">videos</a>
+        
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p class="page-abstract"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+    <div>
+  <p>A robot's morphology is pivotal to its functionality, as seen in natural systems where octopi squeeze through small apertures and caterpillars use peristaltic shape changes to navigate diverse environments. While existing robotic systems struggle to achieve precise volumetric transformations, Variable Geometry Truss (VGT) systems show strong morphological capabilities resulting from their large numbers of actuating beams, enabling volumetric shape changes. However, current VGTs face scalability issues due to control complexity that increases exponentially with the number of beams, resulting in physical implementations limited to either a few tetrahedral units or minimal actuatable beams. Previous work simplified control by grouping actuators into synchronized subnetworks through shared air channels, yet relied on manual design for network assignments and control sequences. We introduce metatruss, an optimization framework that builds upon this actuation mechanism through a tailored multi-objective genetic algorithm to automate the computation of actuator grouping, contraction ratios, and control sequences. We developed a highly-damped dynamical simulator that balances computational efficiency with physical accuracy, validated through experimental prototypes with trajectory differences of 4.38% over 86.0 cm displacement. Through diverse robotic implementations, we show that metatruss can achieve complex morphological adaptations while maintaining control simplicity. Empirical results validate the hypothesis that there exists an optimal number of control networks for a given metatruss, beyond which additional networks yield diminishing returns in performance across multiple tasks.
+  </p>
+</div>
+<!-- 
+Recent studies show that a robot's morphology is pivotal to its functionality~\cite{shah_shape_2021}. Biological organisms demonstrate this through their ability to adjust body structure and stiffness to accommodate environmental demands - octopi squeeze through small apertures, while caterpillars use peristaltic shape changes to navigate diverse environments. This adaptability becomes indispensable for robots facing tasks such as fitting into tight spaces, conforming to objects, or inducing specific human emotions and cognitive responses. However, such dynamic plasticity that enables robust operation in natural environments remains a challenge for most artificial systems.
+
+\q{c4_0}{
+Robotic systems with adaptive morphology demonstrate the ability to change shapes, including volumetric transformations, continuously. Bar-joint robots use interconnected bars and joints as linear or rotational actuators, but are often limited to tree topologies~\cite{robogrammar, metaMorph, embodiedIntelligenceLearning2021} or single-bar limbs~\cite{lipsonAutomaticGolem2000}, restricting their shape expressiveness and weight-bearing capacity. Multi-material voxel robots~\cite{unshacklingEvolutionCubicRobot, evolvedElectrophysiologicalSoft_cubicRobot, evolvingSoftRobotsInTightSpace, cheney_scalable_2018}, composed of regular cubic units (voxels) with different material properties, offer diverse shape changes by activating specific voxels. However, they face challenges in scalability and real-world precision due to their solid volume nature and the non-linear interactions between connected voxels. Magnetic self-reconfigurable cubic robots~\cite{zykov_robotics_2005, mitCubeRobot} allow reassembling of voxelated shapes through magnetic connections but lack structural integrity and continuous motion, limiting their practical applications. Other approaches include robots with variable limb lengths~\cite{sun_embedded_2023, nygaard_real-world_2021}, morphing wheels~\cite{sihite_multi-modal_2023}, and 2D origami or soft sheet robots~\cite{shah_soft_2021, belke_morphological_2023}. However, these designs often have limited degrees of freedom and control precision or are constrained to specific morphologies, highlighting the need for more versatile and scalable solutions in adaptive robotic systems that can achieve complex, three-dimensional shape changes while maintaining structural integrity and precise control.
+
+}
+
+\q{c4_1}{
+Among the various approaches to address these challenges, variable geometry truss (VGT) systems stand out among robotic designs that offer morphological complexity and adaptability. VGTs, composed of beams and joints that form tetrahedral or octahedral truss structures, achieve diverse transformations such as rotation, twisting, linear, and volumetric scaling through actuator beams. This flexibility enables VGTs to perform standard robotic tasks such as locomotion~\cite{usevitch_locomotion_2020, liu_motion_2020}, manipulation~\cite{hughes_trussarmvariable-geometry-truss_1991, miura_design_1984}, and target targeting, as well as specialized activities requiring morphological adaptations~\cite{kovacs_trussformer_2018, spinos_towards_2017, curtis_tetrahedral_2007, pieber_adaptive_2018}. Despite their advantages in degrees-of-freedom (DOFs) and versatility, current VGTs face scalability issues due to the complexity of their control systems, which scale exponentially with the number of beams~\cite{hamlin_tetrobot_1997}. Therefore, existing VGT with physical implementations are either having a few tetrahedral units~\cite{qin_trussbot_2022, hughes_trussarmvariable-geometry-truss_1991, spinos_variable_2017} or only a few beams are actuable~\cite{kovacs_trussformer_2018}, restricting their achievable motions.
+}
+
+\q{c10_0}{
+
+\begin{figure*}[h!]
+% \vskip 0.2in
+\begin{center}
+\centerline{\includegraphics[width=0.8\textwidth]{paper/fig_1_introduction.png}}
+\caption{\textbf{Overview of the metatruss system.} \textbf{a,} A metatruss with double tetrahedron topology, consisting of 9 actuators and three inter-connected air channels, C-networks. The actuators belonging to the same C-network expand simultaneously, causing the shape change of metatruss. \textbf{b,} Variety of achievable morphologies through the combination of binary on/off states for three C-networks. Here, three C-networks can yield $2^3$ possible truss configurations with two tetrahedrons. \textbf{c,} Illustration of the multi-objective genetic algorithm with customized operators used for the metatruss design optimization. \textbf{d,} The C-network assignment, where actuators of the same color belongs to the same C-network. \textbf{e,} The customized joint structure features inner air channels with selective connectivity, enabling unified control for actuators sharing the same air pressure. \textbf{f, } Each beam has a discrete contraction level within one of the four percentages $r \in \{0.0, 0.12, 0.24, 0.36\}$, preset manually with a blocker design. \textbf{g,} Contraction levels in a metatruss design. \textbf{h,} Open-loop binary control signals in a metatruss design. \textbf{i,} Six-channel quadruped metatruss optimized to achieve four distinct target motions through four open-loop controls: walking, turning, tilting, and crouching. \textbf{j, } Experimental results indicating diminishing performance gains with an increased number of C-network channels. \textbf{k,} Comparison with existing research featuring VGT with optimized control \cite{kovacs_trussformer_2018, hamlin_tetrobot_1997, usevitch_distributed_2021, usevitch_linear_2017, usevitch_locomotion_2020, usevitch_untethered_2020, zagal_deformable_2012, qin_trussbot_2022, liu_motion_2020, spinos_linking_2022, hughes_trussarmvariable-geometry-truss_1991, miura1985variable, spinos_towards_2017,spinos_variable_2017, liu_reconfiguration_2019, sofla_shape_2009}, highlighting how our optimizer minimizes the number of control units ($N_c$) while increasing the number of actuatable beams ($N_a$).}
+\label{fig_1_introduction}
+\end{center}
+% \vskip -0.2in
+\end{figure*}
+
+}
+
+
+\q{intro_4}{
+Previously, researchers have introduced a novel approach to simplifying the control of complex truss robots~\cite{gu_pneumesh_2022}, a strategy for grouping actuator air channels into networks, termed C-networks. 
+By grouping pneumatic actuators with interconnected joints, each subgroup of actuators in the same C-network can be actuated simultaneously with a single air valve as the controller (Fig. ~\ref{fig_1_introduction} b). Although the total number of actuators does not change, the number of controllers decreased. With varying combinations of the actuation states of the C-networks, the metatruss deforms into different morphologies and the number of possible morphologies exponentially scales as the number of C-networks increases (Fig.~\ref{fig_1_introduction} b). Moreover, under a temporal sequence of actuation signals, the truss transforms into a series of morphologies and performs a sequential motion. Additionally, they enabled each actuator to have different preset contraction ratios through a blocker structure. This approach aims to simplify the system and control complexities inherent in complex truss robots.
+Although it introduced a design and simulation tool that allows designers to assign the beam connectivity manually, no optimization or automated design pipeline was introduced. As the truss becomes more intricate and tasks grow in complexity, manually navigating C-network assignment becomes tedious and intractable. 
+}
+
+\q{intro_5}{
+In nature, humans and other animals, despite having hundreds of muscles and billions of muscle cells, execute complex movements without consciously controlling each muscle's contraction. Research indicates that animals may use a control strategy known as synergy~\cite{kerkman_muscle_2020, giszter_convergent_1993, torres-oviedo_muscle_2006, ting_limited_2005}. This mechanism, also present in humans, reduces neural pathway complexity~\cite{torres-oviedo_muscle_2006}. With synergy in human motor control, intricate actions such as walking or jumping are executed by periodically coordinating a muscle network, eliminating the need for conscious control of every individual muscle. As such, many muscles operate concurrently when engaging in activities that require collaborative muscle actuation. Although the topic remains under debate, several researchers argue that this coordinated approach achieves an optimal balance between actuator count and control complexity, significantly reducing the computational burden of the brain~\cite{macpherson_strategies_1988, davella_combinations_2003, rana_brain_2015}. 
+Inspired by biological muscle synergy, where complex movements are achieved through efficiently coordinated muscle groups rather than individual control, we propose a similar principle for the metatruss. We hypothesize that there exists an optimal number of C-networks for a given metatruss, beyond which additional networks yield a diminishing increase in performance across various multiple tasks. 
+}
+
+
+\q{intro_6}{
+To validate this hypothesis, we developed a multi-objective optimization pipeline using a tailored hierarchical genetic algorithm (Fig.~\ref{fig_1_introduction}c, d). This approach was chosen because the discrete nature of C-network assignments and the topological constraints of the network make traditional gradient-based optimization methods unsuitable. Our genetic algorithm incorporates custom operators that respect both symmetry and connectivity constraints while exploring the design space. The pipeline simultaneously optimizes three key aspects: the assignment of actuators to C-networks (determining which actuators work together), the preset contraction levels of individual actuators (defining actuators' motion), and the temporal actuation sequences (controlling when each C-network activates). This multi-level optimization allows us to find designs that balance the competing demands of control simplicity and task performance while maintaining physical feasibility.
+}
+
+\q{intro_7}{
+Our hypothesis is supported by an empirical study. We demonstrate that for a complex truss robot with multiple functional objectives - specifically, a quadruped metatruss bot tasked with four distinct functions - a limited number of C-networks can yield competitive performance (Fig.~\ref{fig_1_introduction}d, i, j, Supplementary Video 1). This finding is significant in comparison to the existing literature. Our proposed design method and optimization approach notably enhance the ratio of total actuating beams to the complexity of the control system, offering a unique contribution to the field (Fig.~\ref{fig_1_introduction} k). Furthermore, we showed five different truss topologies with various tasks to show the topology and task diversity of our system. We built a physical prototype of one metatruss to validate the physical feasibility and compare its trajectory with the simulation to show the high accuracy of the simulator.
+}
+ -->
+<div class="row">
+  <div class="col page-figure">
+    <img src="/public/pneumeshplus/f2_related_work.png" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  Although VGTs have large degree of freedom (DoF) in theory, existing VGTs are limited by control complexity that scales exponentially with the number of beams. They often end up with a few tetrahedral units or only a small number of beams are active with the rest being passive.
+  </p>
+</div>
+<div class="row">
+  <div class="col page-figure">
+    <img src="/public/pneumeshplus/f3_lobster_comparison.png" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  We simplify the control complexity of VGTs by grouping actuators into synchronized subnetworks through shared air channels. With this mechanism, we can achieve complex morphological adaptations while maintaining control simplicity. For example, a lobster robot can walk, crawl, and grab objects only requires three control modules, while a traditional VGT would require 67 control modules.
+  </p>
+</div>
+<div class="row">
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f4_lobster_walk_anim.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f4_lobster_walk.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f4_lobster_grab_anim.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f4_lobster_grab.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  The physical implementation of the lobster robot. The robot has two motion modes: crawling only and grabbing + crawling. 
+  </p>
+</div>
+<div class="row">
+  <div class="col page-figure">
+    <img src="/public/pneumeshplus/f5_actuator_double_tet.png" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  Left: Pneumatic linear actuator beam. Middle: 3D printed joint with selectively connected air channels. Right: A double tetrahedron metatruss with 9 actuators and 3 C-networks.
+  </p>
+</div>
+<div class="row">
+  <div class="col-12">
+  <div class="row">
+    <div class="col-4 page-figure">
+      <img src="/public/pneumeshplus/doubletet0.gif" class="img-fluid paper-teaser-image">
+    </div>
+    <div class="col-4 page-figure">
+      <img src="/public/pneumeshplus/doubletet1.gif" class="img-fluid paper-teaser-image">
+    </div>
+    <div class="col-4 page-figure">
+      <img src="/public/pneumeshplus/doubletet2.gif" class="img-fluid paper-teaser-image">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 page-figure">
+      <img src="/public/pneumeshplus/doubletet3.gif" class="img-fluid paper-teaser-image">
+    </div>
+    <div class="col-4 page-figure">
+      <img src="/public/pneumeshplus/doubletet4.gif" class="img-fluid paper-teaser-image">
+    </div>
+    <div class="col-4 page-figure">
+      <img src="/public/pneumeshplus/doubletet5.gif" class="img-fluid paper-teaser-image">
+    </div>
+  </div>
+  <p>
+  Actuator grouping exponentially increases the number of possible morphologies. For instance, the double tetrahedron metatruss can achieve 8 different morphologies with 3 C-networks.
+  </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col page-figure">
+    <img src="/public/pneumeshplus/f7_pipeline.png" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  Optimization pipeline. The multi-objective genetic algorithm takes in the predefined topology, constraints, and multiple objectives and outputs the optimal actuator grouping, and open-loop binary control signals.
+  </p>
+</div>
+<div class="row">
+  <div class="col-6 page-figure d-flex justify-content-center">
+    <img src="/public/pneumeshplus/f8_constraint_operator.png" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-6 paper-figure d-flex justify-content-center" style="height: 132px">
+    <img src="/public/pneumeshplus/f8_operator.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  Left: Each C-network is constrained to have a symmetric and connected topology. Right: Customized operators in the genetic algorithm respect the constraints and explore the design space.
+  </p>
+</div>
+<div class="row">
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f9_table_walk.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f9_table_turn.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f9_table_lower.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-3 page-figure">
+    <img src="/public/pneumeshplus/f9_table_tilt.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  The quadruped metatruss robot can achieve four distinct target motions through four controls: walking, turning, tilting, and crouching.
+  </p>
+</div>
+<div class="row">
+  <div class="col page-figure">
+    <img src="/public/pneumeshplus/f10_n_channel_vs_performance.png" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  <b>Performance Trade-offs with Varying C-network Channel Numbers.</b> <b>a</b>, C-network assignments for the quadruped robot with 2, 8, 16, 32, or 64 C-network channels at the 1000th
+  iteration. <b>b</b>, Performance metrics for a quadruped robot for four target objectives, including walking
+  distance, turning alignment, tilting alignment, and crouching distance. <b>c</b>, ANOVA test results on
+  multi-objective optimization performance for quadruped robots trained with 2, 8, 16, 32, or 64 C-
+  network channels, each group comprising six data points. Significant differences are observed across
+  the five groups, with a notable distinction in the first pair highlighted by Tukey’s HSD. <b>d</b>, Performance
+  of the hypervolume of the Pareto front across iterations.
+  </p>
+</div>
+<p>Metatruss Design Variations and Performances a, Three target positions for a morphing
+helmet in two objectives, with green indicating the key joints, and red being the corresponding target
+positions. b, Joint weights of the morphing helmet are indicated by color shading, with darker shades
+representing larger weights. c, The shape of the helmet before and after morphing. d-e, Shape-
+shifting helmet training metrics: hypervolume and mean square distance between the key joints and
+the corresponding target positions. f, Lobster robot’s walking trajectory and morphologies at different
+times. g-i, Lobster robot metrics: hypervolume, energy efficiency, and walking distance. j, Tentacle
+robot reaching three distinct target positions. k-l, Tentacle robot metrics: hypervolume and mean
+squared distance between the tracking joint and three target positions</p>
+<div class="row">
+  <div class="col-2">  </div>
+  <div class="col-8">
+    <div class="row">
+      <div class="col-6 page-figure">
+        <img src="/public/pneumeshplus/f11_helmet0_side.gif" class="img-fluid paper-teaser-image">
+      </div>
+      <div class="col-6 page-figure">
+        <img src="/public/pneumeshplus/f11_helmet1_side.gif" class="img-fluid paper-teaser-image">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 page-figure">
+        <img src="/public/pneumeshplus/f11_helmet0_per.gif" class="img-fluid paper-teaser-image">
+      </div>
+      <div class="col-6 page-figure">
+        <img src="/public/pneumeshplus/f11_helmet1_per.gif" class="img-fluid paper-teaser-image">
+      </div>
+    </div>
+  </div>
+  <div class="col-2">  </div>
+  <p>
+  The morphing helmet can achieve three target positions through volumetric transformations, which is not easily achievable by limbed robots or traditional VGTs.
+  </p>
+</div>
+<div class="row">
+  <div class="col-4 page-figure">
+    <img src="/public/pneumeshplus/f12_tentacle0.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-4 page-figure">
+    <img src="/public/pneumeshplus/f12_tentacle1.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <div class="col-4 page-figure">
+    <img src="/public/pneumeshplus/f12_tentacle2.gif" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+  The tentacle robot can reach three distinct target positions precisely.
+  </p>
+</div>
+<div class="row">
+  <div class="col page-figure">
+    <img src="/public/pneumeshplus/f13_physical_experiment.png" class="img-fluid paper-teaser-image">
+  </div>
+  <p>
+<p>Physical experiments validate the high accuracy of the simulator. The trajectory difference between the simulation and the physical prototype is 4.38% over 86.0 cm displacement. <b>a</b>, Comparison of the experimental
+and simulated pillbug performing walking with lowered body in one action sequence cycle. The three
+tracked joints are highlighted in green bounding boxes. <b>b-d</b>, The experiment and simulated trajectories
+of the three joints (Top-bottom: joint 1-3). The color gradient indicates the time of the motion. The
+joint positions at the beginning and ending of each action sequence cycle are highlighted with dots.
+<b>e-g</b>, Trajectories of each action sequence cycle from the experiment and simulated trajectories (Top-
+bottom: joint 1-3). All the cycles are cropped from b-d at the highlighted points, with starting
+positions aligned at the zero coordinate.</p>
+  </p>
+</div>
+    </div>
+  </div>
+  
+
+</div>

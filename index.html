@@ -66,6 +66,8 @@
   <!-- Custom JS -->         
   <script src="/js/bio.js"></script>
 
+  <!-- password protection -->
+  <script src="/js/password.js"></script>
 
   <!-- Custom tracking code -->
   <script src="/js/tracking.js"></script>
@@ -101,7 +103,7 @@ I am a final-year Ph.D. student in <a href="http://morphingmatter.cs.cmu.edu/">M
 </p>
 <p>
 My research focuses on computational design and fabrication for shape-morphing systems, with a focus on
-<span class="expandable-term" data-term="truss">truss-based robotic structures </span> and <span class="expandable-term" data-term="4dprinting"> self-developing responsive materials </span>. I develop novel mechanical and material mechanisms that enable precise, high-degree-of-freedom volumetric transformations while minimizing hardware complexity. I develop efficient algorithms and specialized models to address the design and control challenges that emerge from increasingly complex morphing mechanisms. My research interests lie at the intersection of geometries, robotic systems, and machine learning.
+<span class="expandable-term" data-term="truss">truss-based robotic structures </span> and <span class="expandable-term" data-term="4dprinting"> self-developing responsive materials </span>. I discover novel mechanical and material mechanisms that enable precise, high-degree-of-freedom volumetric transformations while minimizing hardware complexity. I develop efficient algorithms and specialized models to address the design and control challenges that emerge from increasingly complex morphing mechanisms. My research interests lie at the intersection of geometries, robotic systems, and machine learning.
 </p>
 <p>
 Prior to joining CMU, I received my bachelor’s degree from <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, China. Throughout my acadmic journey, I was fortunate to be mentored and collaborate with Prof. Alexandra Ion, Prof. Nikolas Martelaro, Prof. Guanyun Wang, Prof. Jim McCann,  Prof. Chris Harrison,  Prof. Teng Zhang, Prof. Levent Burak Kara, Prof. Jessica Yongjie Zhang.
@@ -109,17 +111,21 @@ Prior to joining CMU, I received my bachelor’s degree from <a href="https://en
 <p></div></p>
   </div>
 </div>
-<div class="row" aria-label="Research">
-  <div class="col section-title">
-    Research
+<div class="row section-title" aria-label="Research">
+  <div>
+    Research 
+  </div>
+  <div> 
+    <div class="summary-card-highlight section-title-comment">
+    *shadow indicates highlighted work* 
+    </div>
   </div>
 </div>
 <!-- Papers -->
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/metatruss.png" class="img-fluid summary-image" alt="MetaTruss: Truss Topology and Parameter Generation with Variational Auto-encoders teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/metatruss.png" class="img-fluid summary-image" alt="MetaTruss: Truss Topology and Parameter Generation with Variational Auto-encoders teaser"></div>
   <div class="col-8">
     <div class="summary-title">MetaTruss: Truss Topology and Parameter Generation with Variational Auto-encoders</div>
     <div class="summary-authors"><a href="/" class="author-link author-me">Jianzhe Gu</a>, 
@@ -128,22 +134,19 @@ Prior to joining CMU, I received my bachelor’s degree from <a href="https://en
         <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html" class="author-link">Ding Zhao</a>, 
         <a href="https://engineering.cmu.edu/borg/directory/index.html" class="author-link">Vickie Webster-Wood</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
-    <div class="summary-venue">(On Going) 2024</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="mailto:jianzheg@andrew.cmu.edu?subject=Paper Inquiry&amp;body=Hey Jianzhe, I am interested in the paper &#39;MetaTruss&#39;. Can you provide me with more information?"  
+    <div class="summary-venue">(On Going) 2025</div>
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="mailto:jianzheg@andrew.cmu.edu?subject=Paper Inquiry&amp;body=Hey Jianzhe, I am interested in the paper &#39;MetaTruss&#39;. Can you provide me with more information?"
              >
-project page (on request)<br>
-</a>
-</div></p>
-<p></div></p>
+            project page (on request)   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/pneumeshplus.jpg" class="img-fluid summary-image" alt="Muscle Synergy Evolution in Actuator Networks teaser"></p>
-  </div>
+<div class="row summary-card 
+    summary-card-highlight">
+  <div class="col-4"><img src="/public/pneumeshplus.jpg" class="img-fluid summary-image" alt="Muscle Synergy Evolution in Actuator Networks teaser"></div>
   <div class="col-8">
     <div class="summary-title">Muscle Synergy Evolution in Actuator Networks</div>
     <div class="summary-authors"><a href="/" class="author-link author-me">Jianzhe Gu</a>, 
@@ -155,21 +158,23 @@ project page (on request)<br>
         <a href="https://engineering.cmu.edu/borg/directory/index.html" class="author-link">Vickie Webster-Wood</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Nature Communications (Under Revision) 2024</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="mailto:jianzheg@andrew.cmu.edu?subject=Paper Inquiry&amp;body=Hey Jianzhe, I am interested in the paper &#39;Muscle Synergy Evolution in Actuator Networks&#39;. Can you provide me with more information?"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="mailto:jianzheg@andrew.cmu.edu?subject=Paper Inquiry&amp;body=Hey Jianzhe, I am interested in the paper &#39;Muscle Synergy Evolution in Actuator Networks&#39;. Can you provide me with more information?"
              >
-project page (on request)<br>
-</a>
-</div></p>
-<p></div></p>
+            project page (on request)   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="/research/pneumeshplus"
+             data-protected="true"  >
+            project page (password)   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/wearable.png" class="img-fluid summary-image" alt="Wearable Material Properties: Passive Wearable Microstructures as Adaptable Interfaces for the Physical Environment teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/wearable.png" class="img-fluid summary-image" alt="Wearable Material Properties: Passive Wearable Microstructures as Adaptable Interfaces for the Physical Environment teaser"></div>
   <div class="col-8">
     <div class="summary-title">Wearable Material Properties: Passive Wearable Microstructures as Adaptable Interfaces for the Physical Environment</div>
     <div class="summary-authors"><a href="https://www.yuyu.dev/" class="author-link">Yuyu Lin</a>, 
@@ -178,21 +183,18 @@ project page (on request)<br>
         <a href="https://www.soniaprashant.com/" class="author-link">Sonia Prashant</a>, 
         <a href="https://alexandraion.com/" class="author-link">Alexandra Ion</a></div>
     <div class="summary-venue">Conference on Human Factors in Computing Systems (CHI) 2025</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="mailto:jianzheg@andrew.cmu.edu?subject=Paper Inquiry&amp;body=Hey Jianzhe, I am interested in the paper &#39;Wearable Material Properties: Passive Wearable Microstructures as Adaptable Interfaces for the Physical Environment&#39;. Can you provide me with more information?"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="mailto:jianzheg@andrew.cmu.edu?subject=Paper Inquiry&amp;body=Hey Jianzhe, I am interested in the paper &#39;Wearable Material Properties: Passive Wearable Microstructures as Adaptable Interfaces for the Physical Environment&#39;. Can you provide me with more information?"
              >
-project page (on request)<br>
-</a>
-</div></p>
-<p></div></p>
+            project page (on request)   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/breathhaptics.jpg" class="img-fluid summary-image" alt="breatHaptics: Rendering Breath Signals With Fine Granularity Using Shape-changing Soft Interface teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/breathhaptics.jpg" class="img-fluid summary-image" alt="breatHaptics: Rendering Breath Signals With Fine Granularity Using Shape-changing Soft Interface teaser"></div>
   <div class="col-8">
     <div class="summary-title">breatHaptics: Rendering Breath Signals With Fine Granularity Using Shape-changing Soft Interface</div>
     <div class="summary-authors"><a href="https://www.sunnivaliu.com/" class="author-link">Sunniva Liu</a>, 
@@ -200,35 +202,28 @@ project page (on request)<br>
         <a href="https://morphingmatter.org/member/dinesh-k-patel" class="author-link">Dinesh K. Patel</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Conference on Tangible, Embedded and Embodied Interaction (TEI) 2023</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://www.sunnivaliu.com/breathaptics/"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://www.sunnivaliu.com/breathaptics/"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://cdn.prod.website-files.com/647444f26ccc23bbb500da83/6581cb787bb2211351770e86_tei24-24.pdf"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://cdn.prod.website-files.com/647444f26ccc23bbb500da83/6581cb787bb2211351770e86_tei24-24.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://www.youtube.com/watch?v=uFRdOLOTOIc&amp;embeds_referring_euri=https%3A%2F%2Fwww.sunnivaliu.com%2F"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://www.youtube.com/watch?v=uFRdOLOTOIc&amp;embeds_referring_euri=https%3A%2F%2Fwww.sunnivaliu.com%2F"
              >
-video<br>
-</a>
-</div></p>
-<p></div></p>
+            video   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/pneumesh/fox_forward.gif" class="img-fluid summary-image" alt="PneuMesh: Pneumatic-driven Truss-based Shape Changing System teaser"></p>
-  </div>
+<div class="row summary-card 
+    summary-card-highlight">
+  <div class="col-4"><img src="/public/pneumesh/fox_forward.gif" class="img-fluid summary-image" alt="PneuMesh: Pneumatic-driven Truss-based Shape Changing System teaser"></div>
   <div class="col-8">
     <div class="summary-title">PneuMesh: Pneumatic-driven Truss-based Shape Changing System</div>
     <div class="summary-authors"><a href="/" class="author-link author-me">Jianzhe Gu</a>, 
@@ -241,56 +236,43 @@ video<br>
         <a href="https://www.guanyundesign.com/ABOUT" class="author-link">Guanyun Wang</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">CHI 2022</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="/research/pneumesh"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="/research/pneumesh"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/projects/pneumesh"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/projects/pneumesh"
              >
-page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502099"  
+            page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502099"
              >
-doi<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://www.youtube.com/watch?v=LhtgYSo2pPE"  
+            doi   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://www.youtube.com/watch?v=LhtgYSo2pPE"
              >
-video<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/s/penuMesh_2022.pdf"  
+            video   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/s/penuMesh_2022.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://riceroll.github.io/pneumesh/"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://riceroll.github.io/pneumesh/"
              >
-online editor<br>
-</a>
-</div></p>
-<p></div></p>
+            online editor   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/electripop.png" class="img-fluid summary-image" alt="ElectriPop: Low-Cost Shape-Changing Displays with Electrostatically Inflated Mylar Sheets teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/electripop.png" class="img-fluid summary-image" alt="ElectriPop: Low-Cost Shape-Changing Displays with Electrostatically Inflated Mylar Sheets teaser"></div>
   <div class="col-8">
     <div class="summary-title">ElectriPop: Low-Cost Shape-Changing Displays with Electrostatically Inflated Mylar Sheets</div>
     <div class="summary-authors"><a href="https://cathy-fang.com/" class="author-link">Cathy Fang</a>, 
@@ -298,42 +280,33 @@ online editor<br>
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a>, 
         <a href="https://chrisharrison.net/index.php" class="author-link">Chris Harrison</a></div>
     <div class="summary-venue">Conference on Human Factors in Computing Systems (CHI) 2022</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://cathy-fang.com/project/electripop.html"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://cathy-fang.com/project/electripop.html"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://cathy-fang.com/image/electripop/electripop_chi22_final.pdf"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://cathy-fang.com/image/electripop/electripop_chi22_final.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://www.youtube.com/watch?v=XupMCugYGiQ&amp;t=75s"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://www.youtube.com/watch?v=XupMCugYGiQ&amp;t=75s"
              >
-video 1<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://www.youtube.com/watch?v=OoPQogX1KWY&amp;t=188s"  
+            video 1   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://www.youtube.com/watch?v=OoPQogX1KWY&amp;t=188s"
              >
-video 2<br>
-</a>
-</div></p>
-<p></div></p>
+            video 2   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/flextruss.png" class="img-fluid summary-image" alt="FlexTruss: A Computational Threading Method for Multi-material, Multi-form and Multi-use Prototyping teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/flextruss.png" class="img-fluid summary-image" alt="FlexTruss: A Computational Threading Method for Multi-material, Multi-form and Multi-use Prototyping teaser"></div>
   <div class="col-8">
     <div class="summary-title">FlexTruss: A Computational Threading Method for Multi-material, Multi-form and Multi-use Prototyping</div>
     <div class="summary-authors">Lingyun Sun, 
@@ -347,35 +320,28 @@ video 2<br>
         <a href="http://www.idi.zju.edu.cn/en/member/2662.html" class="author-link">Ye Tao</a>, 
         <a href="https://www.guanyundesign.com/ABOUT" class="author-link">Guanyun Wang</a></div>
     <div class="summary-venue">Conference on Human Factors in Computing Systems (CHI) 2021</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://design.zju.edu.cn/guanyunlab/projects/FlexTruss"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://design.zju.edu.cn/guanyunlab/projects/FlexTruss"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://www.youtube.com/watch?v=tG-3kM0DYQA"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://www.youtube.com/watch?v=tG-3kM0DYQA"
              >
-video<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://dl.acm.org/doi/10.1145/3411764.3445311"  
+            video   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://dl.acm.org/doi/10.1145/3411764.3445311"
              >
-doi<br>
-</a>
-</div></p>
-<p></div></p>
+            doi   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/geodesyplus/bear.png" class="img-fluid summary-image" alt="Geodesy2.5: Inverse Design Tool for Asymmetrical Self-Rising Surfaces with Color Texture teaser"></p>
-  </div>
+<div class="row summary-card 
+    summary-card-highlight">
+  <div class="col-4"><img src="/public/geodesyplus/bear.png" class="img-fluid summary-image" alt="Geodesy2.5: Inverse Design Tool for Asymmetrical Self-Rising Surfaces with Color Texture teaser"></div>
   <div class="col-8">
     <div class="summary-title">Geodesy2.5: Inverse Design Tool for Asymmetrical Self-Rising Surfaces with Color Texture</div>
     <div class="summary-authors"><a href="/" class="author-link author-me">Jianzhe Gu</a>, 
@@ -389,49 +355,38 @@ doi<br>
         <a href="http://www.cs.cmu.edu/~jmccann/" class="author-link">James McCann</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Symposium on Computational Fabrication (SCF) 2020</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/projects/geodesy"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/projects/geodesy"
              >
-project<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://static1.squarespace.com/static/5fc1dbf8116eb00e3c52b568/t/5fc2fced9d79364840f0b317/1606614312808/Geodesy_SCF.pdf"  
+            project   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://static1.squarespace.com/static/5fc1dbf8116eb00e3c52b568/t/5fc2fced9d79364840f0b317/1606614312808/Geodesy_SCF.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://doi.org/10.1145/3424630.3425420"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://doi.org/10.1145/3424630.3425420"
              >
-doi<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://vimeo.com/479200019"  
+            doi   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://vimeo.com/479200019"
              >
-video<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://github.com/riceroll/GeodesyPlus"  
+            video   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://github.com/riceroll/GeodesyPlus"
              >
-code<br>
-</a>
-</div></p>
-<p></div></p>
+            code   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/eseed.jpg" class="img-fluid summary-image" alt="E-seed: Shape-Changing Interfaces that Self Drill teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/eseed.jpg" class="img-fluid summary-image" alt="E-seed: Shape-Changing Interfaces that Self Drill teaser"></div>
   <div class="col-8">
     <div class="summary-title">E-seed: Shape-Changing Interfaces that Self Drill</div>
     <div class="summary-authors"><a href="https://danli-luo.com/" class="author-link">Danli Luo</a>, 
@@ -440,28 +395,23 @@ code<br>
         <a href="https://www.guanyundesign.com/ABOUT" class="author-link">Guanyun Wang</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Symposium on User Interface Software and Technology (UIST) 2020</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://dl.acm.org/doi/10.1145/3379337.3415855"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://dl.acm.org/doi/10.1145/3379337.3415855"
              >
-doi<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://www.youtube.com/watch?v=AwwyUsoZqsc"  
+            doi   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://www.youtube.com/watch?v=AwwyUsoZqsc"
              >
-video<br>
-</a>
-</div></p>
-<p></div></p>
+            video   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/simulearn.jpg" class="img-fluid summary-image" alt="SimuLearn: Fast and Accurate Simulator to Support Morphing Materials Design and Workflows teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/simulearn.jpg" class="img-fluid summary-image" alt="SimuLearn: Fast and Accurate Simulator to Support Morphing Materials Design and Workflows teaser"></div>
   <div class="col-8">
     <div class="summary-title">SimuLearn: Fast and Accurate Simulator to Support Morphing Materials Design and Workflows</div>
     <div class="summary-authors"><a href="https://humphrey-yang.squarespace.com/" class="author-link">Humphrey Yang</a>, 
@@ -473,35 +423,28 @@ video<br>
         <a href="https://www.andrew.cmu.edu/user/jessicaz/" class="author-link">Yongjie Jessica Zhang</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Symposium on User Interface Software and Technology (UIST) 2020</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/projects/simulearn"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/projects/simulearn"
              >
-project<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/s/SimuLearn-paper.pdf"  
+            project   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/s/SimuLearn-paper.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://dl.acm.org/doi/10.1145/3379337.3415867"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://dl.acm.org/doi/10.1145/3379337.3415867"
              >
-doi<br>
-</a>
-</div></p>
-<p></div></p>
+            doi   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/materialcharacterization.jpg" class="img-fluid summary-image" alt="Material characterization and precise finite element analysis of fiber reinforced thermoplastic composites for 4D printing teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/materialcharacterization.jpg" class="img-fluid summary-image" alt="Material characterization and precise finite element analysis of fiber reinforced thermoplastic composites for 4D printing teaser"></div>
   <div class="col-8">
     <div class="summary-title">Material characterization and precise finite element analysis of fiber reinforced thermoplastic composites for 4D printing</div>
     <div class="summary-authors">Yuxuan Yu, 
@@ -514,28 +457,23 @@ doi<br>
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a>, 
         <a href="https://www.andrew.cmu.edu/user/jessicaz/" class="author-link">Yongjie Jessica Zhang</a></div>
     <div class="summary-venue">Computer-Aided Design (CAD) 2020</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/s/computeraidesign.pdf"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/s/computeraidesign.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://doi.org/10.1016/j.cad.2020.102817"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://doi.org/10.1016/j.cad.2020.102817"
              >
-doi<br>
-</a>
-</div></p>
-<p></div></p>
+            doi   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/geodesy2.jpg" class="img-fluid summary-image" alt="Geodesy: Self-rising 2.5D Tiles by Printing along 2D Geodesic Closed Path teaser"></p>
-  </div>
+<div class="row summary-card 
+    summary-card-highlight">
+  <div class="col-4"><img src="/public/geodesy2.jpg" class="img-fluid summary-image" alt="Geodesy: Self-rising 2.5D Tiles by Printing along 2D Geodesic Closed Path teaser"></div>
   <div class="col-8">
     <div class="summary-title">Geodesy: Self-rising 2.5D Tiles by Printing along 2D Geodesic Closed Path</div>
     <div class="summary-authors"><a href="/" class="author-link author-me">Jianzhe Gu</a>, 
@@ -548,35 +486,28 @@ doi<br>
         <a href="https://www.andrew.cmu.edu/user/jessicaz/" class="author-link">Yongjie Jessica Zhang</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Conference on Human Factors in Computing Systems (CHI) 2019</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/projects/geodesy"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/projects/geodesy"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/s/geodesy.pdf"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/s/geodesy.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://doi.org/10.1145/3290605.3300267"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://doi.org/10.1145/3290605.3300267"
              >
-doi<br>
-</a>
-</div></p>
-<p></div></p>
+            doi   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/selfhealingui.gif" class="img-fluid summary-image" alt="Self-healing UI: Mechanically and Electrically Self-healing Materials for Sensing and Actuation Interfaces teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/selfhealingui.gif" class="img-fluid summary-image" alt="Self-healing UI: Mechanically and Electrically Self-healing Materials for Sensing and Actuation Interfaces teaser"></div>
   <div class="col-8">
     <div class="summary-title">Self-healing UI: Mechanically and Electrically Self-healing Materials for Sensing and Actuation Interfaces</div>
     <div class="summary-authors"><a href="https://narumi.me/" class="author-link">Koya Narumi</a>, 
@@ -588,42 +519,33 @@ doi<br>
         <a href="https://mse.engineering.cmu.edu/directory/bios/islam-mohammad.html" class="author-link">Mohammad Islam</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Symposium on User Interface Software and Technology (UIST) 2019</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/projects/healer"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/projects/healer"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/s/Self-healing-UI_small.pdf"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/s/Self-healing-UI_small.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://dl.acm.org/doi/abs/10.1145/3332165.3347901"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://dl.acm.org/doi/abs/10.1145/3332165.3347901"
              >
-doi<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://vimeo.com/390389122"  
+            doi   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://vimeo.com/390389122"
              >
-video<br>
-</a>
-</div></p>
-<p></div></p>
+            video   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/4dmesh.gif" class="img-fluid summary-image" alt="4DMesh: 4D Printing Morphing Non-Developable Mesh Surfaces teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/4dmesh.gif" class="img-fluid summary-image" alt="4DMesh: 4D Printing Morphing Non-Developable Mesh Surfaces teaser"></div>
   <div class="col-8">
     <div class="summary-title">4DMesh: 4D Printing Morphing Non-Developable Mesh Surfaces</div>
     <div class="summary-authors"><a href="https://www.guanyundesign.com/ABOUT" class="author-link">Guanyun Wang</a>, 
@@ -635,35 +557,28 @@ video<br>
         <a href="https://www.meche.engineering.cmu.edu/directory/bios/kara-burak.html" class="author-link">Levent Burak Kara</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Symposium on User Interface Software and Technology (UIST) 2018</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/projects/4dmesh"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/projects/4dmesh"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/s/4DMesh.pdf"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/s/4DMesh.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://doi.org/10.1145/3242587.3242625"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://doi.org/10.1145/3242587.3242625"
              >
-doi<br>
-</a>
-</div></p>
-<p></div></p>
+            doi   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/thermorph.gif" class="img-fluid summary-image" alt="Thermorph: Democratizing 4D printing of self-folding Materials and Interfaces teaser"></p>
-  </div>
+<div class="row summary-card 
+    summary-card-highlight">
+  <div class="col-4"><img src="/public/thermorph.gif" class="img-fluid summary-image" alt="Thermorph: Democratizing 4D printing of self-folding Materials and Interfaces teaser"></div>
   <div class="col-8">
     <div class="summary-title">Thermorph: Democratizing 4D printing of self-folding Materials and Interfaces</div>
     <div class="summary-authors">Kwon An, 
@@ -679,35 +594,28 @@ doi<br>
         <a href="https://zhangtgroup.weebly.com/" class="author-link">Teng Zhang</a>, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Conference on Human Factors in Computing Systems (CHI) 2018</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/projects/thermorph"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/projects/thermorph"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/s/paper260.pdf"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/s/paper260.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://doi.org/10.1145/3173574.3173834"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://doi.org/10.1145/3173574.3173834"
              >
-doi<br>
-</a>
-</div></p>
-<p></div></p>
+            doi   
+          </a>
+        </div></div>
   </div>
 </div>
   <!-- _includes/paper-card.njk -->
-<div class="row summary-card">
-  <div class="col-4">
-<p><img src="/public/paperactuator.gif" class="img-fluid summary-image" alt="Printed Paper Actuator: A Low-cost Reversible Actuation and Sensing Method for Shape Changing Interfaces teaser"></p>
-  </div>
+<div class="row summary-card 
+    ">
+  <div class="col-4"><img src="/public/paperactuator.gif" class="img-fluid summary-image" alt="Printed Paper Actuator: A Low-cost Reversible Actuation and Sensing Method for Shape Changing Interfaces teaser"></div>
   <div class="col-8">
     <div class="summary-title">Printed Paper Actuator: A Low-cost Reversible Actuation and Sensing Method for Shape Changing Interfaces</div>
     <div class="summary-authors"><a href="https://www.guanyundesign.com/ABOUT" class="author-link">Guanyun Wang</a>, 
@@ -719,31 +627,46 @@ doi<br>
         Byoungkwon An, 
         <a href="https://morphingmatter.org/member/lining-yao/" class="author-link">Lining Yao</a></div>
     <div class="summary-venue">Conference on Human Factors in Computing Systems (CHI) 2018</div>
-    <div class="d-flex flex-row flex-wrap">
-<p><div>
-<a href="https://morphingmatter.org/projects/printed-paper-actuator"  
+    <div class="d-flex flex-row flex-wrap"><div class="summary-link">
+          <a href="https://morphingmatter.org/projects/printed-paper-actuator"
              >
-project page<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://morphingmatter.org/s/printedpaperactuator_small.pdf"  
+            project page   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://morphingmatter.org/s/printedpaperactuator_small.pdf"
              >
-pdf<br>
-</a>
-</div>
-|<br>
-<div>
-<a href="https://dl.acm.org/doi/10.1145/3173574.3174143"  
+            pdf   
+          </a>
+        </div>&nbsp; | &nbsp;<div class="summary-link">
+          <a href="https://dl.acm.org/doi/10.1145/3173574.3174143"
              >
-doi<br>
-</a>
-</div></p>
-<p></div></p>
+            doi   
+          </a>
+        </div></div>
   </div>
 </div>
 
+  </div>
+    
+  <!-- Password Modal -->
+  <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="passwordModalLabel">Enter Password</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="password" id="projectPassword" class="form-control" placeholder="Enter password">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="closeModal">Close</button>
+          <button type="button" class="btn btn-primary" id="submitPassword">Submit</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 
