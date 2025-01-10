@@ -22,7 +22,7 @@
    <div class="row"> <div class="col-4 page-figure"> <img src="/public/pneumeshplus/table_walk_side.gif" class="img-fluid page-teaser-image"> </div>
 <div class="col-4 page-figure"> <img src="/public/pneumeshplus/helmet0.gif" class="img-fluid page-teaser-image"> </div>
 <div class="col-4 page-figure"> <img src="/public/pneumeshplus/tentacle0.gif" class="img-fluid page-teaser-image"> </div>
-<p> Truss robots with complex morphologies and volumetric transformations designed by our specialized multi-objective genetic algorithm. </p>
+<p class="page-figure-caption"> Truss robots with complex morphologies and volumetric transformations designed by our specialized multi-objective genetic algorithm. </p>
 </div> 
   
   
@@ -162,7 +162,7 @@
 
   <div class="row">
     <div class="col">
-    <div>
+    <div class="abstract">
   <p>A robot's morphology is pivotal to its functionality, as seen in natural systems where octopi squeeze through small apertures and caterpillars use peristaltic shape changes to navigate diverse environments. While existing robotic systems struggle to achieve precise volumetric transformations, Variable Geometry Truss (VGT) systems show strong morphological capabilities resulting from their large numbers of actuating beams, enabling volumetric shape changes. However, current VGTs face scalability issues due to control complexity that increases exponentially with the number of beams, resulting in physical implementations limited to either a few tetrahedral units or minimal actuatable beams. Previous work simplified control by grouping actuators into synchronized subnetworks through shared air channels, yet relied on manual design for network assignments and control sequences. We introduce metatruss, an optimization framework that builds upon this actuation mechanism through a tailored multi-objective genetic algorithm to automate the computation of actuator grouping, contraction ratios, and control sequences. We developed a highly-damped dynamical simulator that balances computational efficiency with physical accuracy, validated through experimental prototypes with trajectory differences of 4.38% over 86.0 cm displacement. Through diverse robotic implementations, we show that metatruss can achieve complex morphological adaptations while maintaining control simplicity. Empirical results validate the hypothesis that there exists an optimal number of control networks for a given metatruss, beyond which additional networks yield diminishing returns in performance across multiple tasks.
   </p>
 </div>
@@ -217,7 +217,7 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   <div class="col page-figure">
     <img src="/public/pneumeshplus/f2_related_work.png" class="img-fluid paper-teaser-image">
   </div>
-  <p>
+  <p class="page-figure-caption">
   Although VGTs have large degree of freedom (DoF) in theory, existing VGTs are limited by control complexity that scales exponentially with the number of beams. They often end up with a few tetrahedral units or only a small number of beams are active with the rest being passive.
   </p>
 </div>
@@ -225,7 +225,7 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   <div class="col page-figure">
     <img src="/public/pneumeshplus/f3_lobster_comparison.png" class="img-fluid paper-teaser-image">
   </div>
-  <p>
+  <p class="page-figure-caption">
   We simplify the control complexity of VGTs by grouping actuators into synchronized subnetworks through shared air channels. With this mechanism, we can achieve complex morphological adaptations while maintaining control simplicity. For example, a lobster robot can walk, crawl, and grab objects only requires three control modules, while a traditional VGT would require 67 control modules.
   </p>
 </div>
@@ -242,15 +242,15 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   <div class="col-3 page-figure">
     <img src="/public/pneumeshplus/f4_lobster_grab.gif" class="img-fluid paper-teaser-image">
   </div>
-  <p>
-  The physical implementation of the lobster robot. The robot has two motion modes: crawling only and grabbing + crawling. 
+  <p class="page-figure-caption">
+  <b> The physical implementation of the lobster robot. </b> The robot has two motion modes: crawling only and grabbing + crawling. 
   </p>
 </div>
 <div class="row">
   <div class="col page-figure">
     <img src="/public/pneumeshplus/f5_actuator_double_tet.png" class="img-fluid paper-teaser-image">
   </div>
-  <p>
+  <p class="page-figure-caption">
   Left: Pneumatic linear actuator beam. Middle: 3D printed joint with selectively connected air channels. Right: A double tetrahedron metatruss with 9 actuators and 3 C-networks.
   </p>
 </div>
@@ -278,7 +278,7 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
       <img src="/public/pneumeshplus/doubletet5.gif" class="img-fluid paper-teaser-image">
     </div>
   </div>
-  <p>
+  <p class="page-figure-caption">
   Actuator grouping exponentially increases the number of possible morphologies. For instance, the double tetrahedron metatruss can achieve 8 different morphologies with 3 C-networks.
   </p>
   </div>
@@ -287,8 +287,8 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   <div class="col page-figure">
     <img src="/public/pneumeshplus/f7_pipeline.png" class="img-fluid paper-teaser-image">
   </div>
-  <p>
-  Optimization pipeline. The multi-objective genetic algorithm takes in the predefined topology, constraints, and multiple objectives and outputs the optimal actuator grouping, and open-loop binary control signals.
+  <p class="page-figure-caption">
+  <b>Optimization pipeline.</b> The multi-objective genetic algorithm takes in the predefined topology, constraints, and multiple objectives and outputs the optimal actuator grouping, and open-loop binary control signals.
   </p>
 </div>
 <div class="row">
@@ -298,7 +298,7 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   <div class="col-6 paper-figure d-flex justify-content-center" style="height: 132px">
     <img src="/public/pneumeshplus/f8_operator.gif" class="img-fluid paper-teaser-image">
   </div>
-  <p>
+  <p class="page-figure-caption">
   Left: Each C-network is constrained to have a symmetric and connected topology. Right: Customized operators in the genetic algorithm respect the constraints and explore the design space.
   </p>
 </div>
@@ -315,7 +315,7 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   <div class="col-3 page-figure">
     <img src="/public/pneumeshplus/f9_table_tilt.gif" class="img-fluid paper-teaser-image">
   </div>
-  <p>
+  <p class="page-figure-caption">
   The quadruped metatruss robot can achieve four distinct target motions through four controls: walking, turning, tilting, and crouching.
   </p>
 </div>
@@ -323,7 +323,7 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   <div class="col page-figure">
     <img src="/public/pneumeshplus/f10_n_channel_vs_performance.png" class="img-fluid paper-teaser-image">
   </div>
-  <p>
+  <p class="page-figure-caption">
   <b>Performance Trade-offs with Varying C-network Channel Numbers.</b> <b>a</b>, C-network assignments for the quadruped robot with 2, 8, 16, 32, or 64 C-network channels at the 1000th
   iteration. <b>b</b>, Performance metrics for a quadruped robot for four target objectives, including walking
   distance, turning alignment, tilting alignment, and crouching distance. <b>c</b>, ANOVA test results on
@@ -333,7 +333,7 @@ Our hypothesis is supported by an empirical study. We demonstrate that for a com
   of the hypervolume of the Pareto front across iterations.
   </p>
 </div>
-<p>Metatruss Design Variations and Performances a, Three target positions for a morphing
+<!-- Metatruss Design Variations and Performances a, Three target positions for a morphing
 helmet in two objectives, with green indicating the key joints, and red being the corresponding target
 positions. b, Joint weights of the morphing helmet are indicated by color shading, with darker shades
 representing larger weights. c, The shape of the helmet before and after morphing. d-e, Shape-
@@ -341,7 +341,7 @@ shifting helmet training metrics: hypervolume and mean square distance between t
 the corresponding target positions. f, Lobster robot’s walking trajectory and morphologies at different
 times. g-i, Lobster robot metrics: hypervolume, energy efficiency, and walking distance. j, Tentacle
 robot reaching three distinct target positions. k-l, Tentacle robot metrics: hypervolume and mean
-squared distance between the tracking joint and three target positions</p>
+squared distance between the tracking joint and three target positions -->
 <div class="row">
   <div class="col-2">  </div>
   <div class="col-8">
@@ -363,7 +363,7 @@ squared distance between the tracking joint and three target positions</p>
     </div>
   </div>
   <div class="col-2">  </div>
-  <p>
+  <p class="page-figure-caption">
   The morphing helmet can achieve three target positions through volumetric transformations, which is not easily achievable by limbed robots or traditional VGTs.
   </p>
 </div>
@@ -377,7 +377,7 @@ squared distance between the tracking joint and three target positions</p>
   <div class="col-4 page-figure">
     <img src="/public/pneumeshplus/f12_tentacle2.gif" class="img-fluid paper-teaser-image">
   </div>
-  <p>
+  <p class="page-figure-caption">
   The tentacle robot can reach three distinct target positions precisely.
   </p>
 </div>
@@ -385,15 +385,15 @@ squared distance between the tracking joint and three target positions</p>
   <div class="col page-figure">
     <img src="/public/pneumeshplus/f13_physical_experiment.png" class="img-fluid paper-teaser-image">
   </div>
-  <p>
-<p>Physical experiments validate the high accuracy of the simulator. The trajectory difference between the simulation and the physical prototype is 4.38% over 86.0 cm displacement. <b>a</b>, Comparison of the experimental
-and simulated pillbug performing walking with lowered body in one action sequence cycle. The three
-tracked joints are highlighted in green bounding boxes. <b>b-d</b>, The experiment and simulated trajectories
-of the three joints (Top-bottom: joint 1-3). The color gradient indicates the time of the motion. The
-joint positions at the beginning and ending of each action sequence cycle are highlighted with dots.
-<b>e-g</b>, Trajectories of each action sequence cycle from the experiment and simulated trajectories (Top-
-bottom: joint 1-3). All the cycles are cropped from b-d at the highlighted points, with starting
-positions aligned at the zero coordinate.</p>
+  <p class="page-figure-caption">
+  <b>Physical experiments validate the high accuracy of the simulator.</b> The trajectory difference between the simulation and the physical prototype is 4.38% over 86.0 cm displacement. <b>a</b>, Comparison of the experimental
+  and simulated pillbug performing walking with lowered body in one action sequence cycle. The three
+  tracked joints are highlighted in green bounding boxes. <b>b-d</b>, The experiment and simulated trajectories
+  of the three joints (Top-bottom: joint 1-3). The color gradient indicates the time of the motion. The
+  joint positions at the beginning and ending of each action sequence cycle are highlighted with dots.
+  <b>e-g</b>, Trajectories of each action sequence cycle from the experiment and simulated trajectories (Top-
+  bottom: joint 1-3). All the cycles are cropped from b-d at the highlighted points, with starting
+  positions aligned at the zero coordinate.
   </p>
 </div>
     </div>

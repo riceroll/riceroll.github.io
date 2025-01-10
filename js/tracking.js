@@ -21,6 +21,8 @@ class VisitorTracker {
         try {
             const response = await fetch('https://ipapi.co/json/');
             const ipData = await response.json();
+
+            console.log('IP data:', ipData);
             
             // Create form data with correct entry IDs
             const formData = new FormData();
@@ -56,6 +58,6 @@ class VisitorTracker {
 }
 
 // Initialize when page loads
-window.addEventListener('load', () => {
+// window.addEventListener('load', () => {
     new VisitorTracker();
-});
+// });

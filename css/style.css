@@ -232,13 +232,15 @@ html {
   
   .page-figure-caption {
     text-align: center;
-    color: #a2a1a0;
+    color: #727170;
+    padding-bottom: 40px;
   }
   
   /* Abstract */
   .abstract {
     text-align: left;
-    padding: 10px;
+    padding: 30px;
+    font-style: italic;
   }
 
 
