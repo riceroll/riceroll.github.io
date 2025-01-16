@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         term.appendChild(definition);
 
         // Toggle definition visibility
-        term.addEventListener('click', (e) => {
+        term.addEventListener('mouseover', (e) => {
             e.stopPropagation();
             document.querySelectorAll('.definition').forEach(def => {
                 def.classList.remove('active');

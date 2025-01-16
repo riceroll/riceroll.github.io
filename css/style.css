@@ -159,6 +159,14 @@ html {
     margin-bottom: 0px;
   }
   
+  .highlight {
+    color: #f2b336;
+  }
+
+  .grey {
+    color: #929190;
+  }
+
   .summary-venue {
     margin-top: 0px;
     margin-bottom: 0px;
