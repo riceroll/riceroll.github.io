@@ -94,47 +94,10 @@ section {
     gap: 1rem;
 }
 
-/* Print Styles */
-@media print {
-    @page {
-        size: letter;
-        margin: 0;
-    }
-    
-    body {
-        width: 8.5in;
-        height: 11in;
-        padding: 0.5in;
-        margin: 0;
-        background: none;
-        overflow: hidden;
-    }
-
-    section {
-        page-break-inside: avoid;
-    }
-    
-    h2 {
-        page-break-after: avoid;
-    }
-    
-    li {
-        page-break-inside: avoid;
-    }
-
-    a {
-        text-decoration: none;
-        color: #333;
-    }
-    
-    .no-print {
-        display: none;
-    }
-}
 
 /* Optional: Dark mode styles */
 @media (prefers-color-scheme: dark) {
-    body {
+    body, html {
         color: #e1e1e1;
         background: #1a1a1a;
     }
@@ -149,17 +112,29 @@ section {
     .item-subtitle {
         color: #999;
     }
-    
-    /* Ensure dark mode doesn't affect PDF */
-    @media print {
-        body {
-            color: #333;
-            background: white;
-        }
-        
-        h2 {
-            color: #2c3e50;
-            border-bottom-color: #2c3e50;
-        }
-    }
 }
+
+
+
+/* Print-specific styles */
+@media print {
+    @page {
+
+        margin-top: 2cm;
+        margin-right: 2cm;
+        margin-bottom: 2cm;
+        margin-left: 2cm;
+    }
+
+
+    /* Ensure links are readable in print */
+    a {
+        text-decoration: none !important;
+    }
+
+
+}
+
+
+
+
