@@ -7,6 +7,8 @@ class VisitorTracker {
     }
 
     async collectInfo() {
+        console.log("collecting");
+
         // Get browser info
         const browserInfo = {
             userAgent: navigator.userAgent,
@@ -23,6 +25,7 @@ class VisitorTracker {
             const ipData = await response.json();
 
             console.log('IP data:', ipData);
+            console.log(window.location.href);
             
             // Create form data with correct entry IDs
             const formData = new FormData();
@@ -34,6 +37,8 @@ class VisitorTracker {
             formData.append('entry.1282557930', JSON.stringify(browserInfo));
 
             formData.append('entry.385779474', window.location.href);
+
+            console.log('done');
             
             // Time (hour and minute are separate fields)
             const now = new Date();
@@ -59,5 +64,5 @@ class VisitorTracker {
 
 // Initialize when page loads
 // window.addEventListener('load', () => {
-    new VisitorTracker();
+new VisitorTracker();
 // });
