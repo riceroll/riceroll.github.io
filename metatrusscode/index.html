@@ -32,6 +32,41 @@
       
   <!-- Custom tracking code -->
   <script src="/js/tracking.js"></script>
+
+  
+
+
+  <script>
+  function downloadFile(url, filename) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+      return response.blob();
+    })
+    .then(blob => {
+      // Create a URL for the blob object
+      const blobUrl = window.URL.createObjectURL(blob);
+      // Create a temporary anchor element
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = blobUrl;
+      // Set the desired file name
+      a.download = filename || url.split('/').pop();
+      // Append the anchor to the document, trigger the click, then remove it
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      // Revoke the object URL to free up memory
+      window.URL.revokeObjectURL(blobUrl);
+    })
+    .catch(err => console.error('Download failed:', err));
+}
+
+// Usage example:
+downloadFile('../public/metatrusscode.zip', 'metatrusscode.zip');
+    </script>
   
 </head>
 <body>
