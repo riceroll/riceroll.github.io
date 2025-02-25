@@ -1,0 +1,172 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12pt;    
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif !important;
+    line-height: normal;
+    color: #333;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in;
+    background: white;
+}
+
+span {
+    line-height: normal;
+}
+
+/* Typography */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 14pt;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+h1, h2 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+a {
+    color: #999999 !important;
+}
+
+h3, h4{
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Layout Components */
+section {
+    margin-bottom: 1.5rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.title {
+    font-variant: small-caps;
+    font-size: 1.2rem;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Experience & Education Components */
+.item {
+    margin-bottom: 5pt !important; /* Ensures consistent spacing */
+}
+
+.item-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.item-courses-title {
+    font-style: normal !important;
+}
+
+.item-title {
+    font-weight: bold;
+}
+
+.item-date {
+    color: #666;
+}
+
+.item-subtitle {
+    color: #666;
+}
+
+
+/* Bullet Points */
+.experience-bullets {
+    list-style-type: disc;
+    margin: 0;
+    margin-left:1rem;
+    padding: 0;
+}
+
+.experience-bullets li {
+    line-height: normal;        /* Keeps text lines close together */
+    margin-bottom: 3pt;  /* Small gap between items */
+    padding: 0;             /* No internal padding needed */
+}
+
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+
+/* Optional: Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body, html {
+        color: #e1e1e1;
+        background: #1a1a1a;
+    }
+    
+    h2 {
+        color: #89b4d4;
+        border-bottom-color: #89b4d4;
+    }
+    
+    .contact-info,
+    .item-date,
+    .item-subtitle {
+        color: #999;
+    }
+}
+
+
+
+/* Print-specific styles */
+@media print {
+    @page {
+        margin-top: 1.3cm;
+        margin-right: 1.3cm;
+        margin-bottom: 1.3cm;
+        margin-left: 1.3cm;
+    }
+
+
+    /* Ensure links are readable in print */
+    a {
+        text-decoration: none !important;
+    }
+
+
+}
+
+
+
+
