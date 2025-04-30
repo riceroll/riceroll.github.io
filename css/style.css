@@ -60,6 +60,8 @@ html {
     padding-bottom: 10px;
     font-size: 1.5rem;
     font-weight: 500;
+    margin-left: -0px;
+    margin-right: -0px;
 }
 
 .section-title-comment {
@@ -107,7 +109,7 @@ html {
   
   .info-meta {
     font-size: 1.0rem;
-    line-height: 0.5rem;
+    line-height: 1.2rem;
     
     padding-top: 10px;
     padding-bottom: 10px;
@@ -288,3 +290,14 @@ html {
     background: rgba(0,0,0,0.5);
     z-index: 999;
   }
+
+
+.skill {
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+
+
+
+
+
